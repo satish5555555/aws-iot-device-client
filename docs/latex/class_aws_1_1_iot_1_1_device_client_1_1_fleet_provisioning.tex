@@ -1,5 +1,5 @@
-\hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning}{}\section{Aws\+:\+:Iot\+:\+:Device\+Client\+:\+:Fleet\+Provisioning Class Reference}
-\label{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning}\index{Aws\+::\+Iot\+::\+Device\+Client\+::\+Fleet\+Provisioning@{Aws\+::\+Iot\+::\+Device\+Client\+::\+Fleet\+Provisioning}}
+\hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning}{}\doxysection{Aws\+::Iot\+::Device\+Client\+::Fleet\+Provisioning Class Reference}
+\label{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning}\index{Aws::Iot::DeviceClient::FleetProvisioning@{Aws::Iot::DeviceClient::FleetProvisioning}}
 
 
 Provides IoT Fleet Provisioning related functionality within the Device Client.  
@@ -9,103 +9,103 @@ Provides IoT Fleet Provisioning related functionality within the Device Client.
 
 {\ttfamily \#include $<$Fleet\+Provisioning.\+h$>$}
 
-\subsection*{Public Member Functions}
+\doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-bool \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a502dc44bd8de73a21d7d42945e9b7f7b}{Provision\+Device} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_shared_crt_resource_manager}{Shared\+Crt\+Resource\+Manager} $>$ fp\+Connection, \hyperlink{struct_aws_1_1_iot_1_1_device_client_1_1_plain_config}{Plain\+Config} \&config)
+bool \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a502dc44bd8de73a21d7d42945e9b7f7b}{Provision\+Device}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_shared_crt_resource_manager}{Shared\+Crt\+Resource\+Manager}} $>$ fp\+Connection, \mbox{\hyperlink{struct_aws_1_1_iot_1_1_device_client_1_1_plain_config}{Plain\+Config}} \&config)
 \begin{DoxyCompactList}\small\item\em Provisions device by creating and storing required resources. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Private Member Functions}
+\doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-bool \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a9be44fae9cf49f534763243561c66586}{Create\+Certificate\+And\+Key} (Iotidentity\+::\+Iot\+Identity\+Client identity\+Client)
+bool \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a9be44fae9cf49f534763243561c66586}{Create\+Certificate\+And\+Key}} (Iotidentity\+::\+Iot\+Identity\+Client identity\+Client)
 \begin{DoxyCompactList}\small\item\em creates a new certificate and private key using the A\+WS certificate authority \end{DoxyCompactList}\item 
-bool \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a2044a0b21798463dff066fabbb9ad869}{Create\+Certificate\+Using\+C\+SR} (Iotidentity\+::\+Iot\+Identity\+Client identity\+Client)
+bool \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a2044a0b21798463dff066fabbb9ad869}{Create\+Certificate\+Using\+C\+SR}} (Iotidentity\+::\+Iot\+Identity\+Client identity\+Client)
 \begin{DoxyCompactList}\small\item\em generate a certificate from a certificate signing request (C\+SR) that keeps user private key secure \end{DoxyCompactList}\item 
-bool \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a2221768ad4f91ac5c593485de33c5c80}{Register\+Thing} (Iotidentity\+::\+Iot\+Identity\+Client identity\+Client)
+bool \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a2221768ad4f91ac5c593485de33c5c80}{Register\+Thing}} (Iotidentity\+::\+Iot\+Identity\+Client identity\+Client)
 \begin{DoxyCompactList}\small\item\em registers the device with A\+WS IoT and create cloud resources \end{DoxyCompactList}\item 
-bool \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a6f4e107e4d2858f51603eec2f390aa96}{Export\+Runtime\+Config} (const std\+::string \&file, const std\+::string \&runtime\+Cert\+Path, const std\+::string \&runtime\+Key\+Path, const std\+::string \&runtime\+Thing\+Name)
+bool \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a6f4e107e4d2858f51603eec2f390aa96}{Export\+Runtime\+Config}} (const std\+::string \&file, const std\+::string \&runtime\+Cert\+Path, const std\+::string \&runtime\+Key\+Path, const std\+::string \&runtime\+Thing\+Name)
 \begin{DoxyCompactList}\small\item\em exports config of newly created resources to runtime config file \end{DoxyCompactList}\item 
-bool \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_ae209de046ed351b4c8d3ef7e1d9f00bc}{Get\+Csr\+File\+Content} (const std\+::string file\+Path)
+bool \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_ae209de046ed351b4c8d3ef7e1d9f00bc}{Get\+Csr\+File\+Content}} (const std\+::string file\+Path)
 \begin{DoxyCompactList}\small\item\em gets C\+SR file content \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Private Attributes}
+\doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a71e0b3d04ea8e5bfcf4c1045eef3b4c1}\label{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a71e0b3d04ea8e5bfcf4c1045eef3b4c1}} 
-std\+::promise$<$ bool $>$ \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a71e0b3d04ea8e5bfcf4c1045eef3b4c1}{keys\+Publish\+Completed\+Promise}
+std\+::promise$<$ bool $>$ \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a71e0b3d04ea8e5bfcf4c1045eef3b4c1}{keys\+Publish\+Completed\+Promise}}
 \begin{DoxyCompactList}\small\item\em a promise variable to check if publish request for Create\+Keys\+And\+Certificate was received \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a5c341917c25fdbf6c9401cbdd488e729}\label{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a5c341917c25fdbf6c9401cbdd488e729}} 
-std\+::promise$<$ bool $>$ \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a5c341917c25fdbf6c9401cbdd488e729}{keys\+Accepted\+Completed\+Promise}
+std\+::promise$<$ bool $>$ \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a5c341917c25fdbf6c9401cbdd488e729}{keys\+Accepted\+Completed\+Promise}}
 \begin{DoxyCompactList}\small\item\em a promise variable to check if subscription request to Create\+Keys\+And\+Certificate Accept topic was executed \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a6c49fdb1af059ea88bf99821757e6a96}\label{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a6c49fdb1af059ea88bf99821757e6a96}} 
-std\+::promise$<$ bool $>$ \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a6c49fdb1af059ea88bf99821757e6a96}{keys\+Rejected\+Completed\+Promise}
+std\+::promise$<$ bool $>$ \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a6c49fdb1af059ea88bf99821757e6a96}{keys\+Rejected\+Completed\+Promise}}
 \begin{DoxyCompactList}\small\item\em a promise variable to check if subscription to Create\+Keys\+And\+Certificate Reject topic was executed \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_aafc3ae225f3d888c1439011db5393b95}\label{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_aafc3ae225f3d888c1439011db5393b95}} 
-std\+::promise$<$ bool $>$ \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_aafc3ae225f3d888c1439011db5393b95}{keys\+Creation\+Completed\+Promise}
+std\+::promise$<$ bool $>$ \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_aafc3ae225f3d888c1439011db5393b95}{keys\+Creation\+Completed\+Promise}}
 \begin{DoxyCompactList}\small\item\em a promise variable to check if publish request for Create\+Keys\+And\+Certificate was executed \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a65d4080ed16a11894450e63ec3f9ef69}\label{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a65d4080ed16a11894450e63ec3f9ef69}} 
-std\+::promise$<$ bool $>$ \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a65d4080ed16a11894450e63ec3f9ef69}{csr\+Publish\+Completed\+Promise}
+std\+::promise$<$ bool $>$ \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a65d4080ed16a11894450e63ec3f9ef69}{csr\+Publish\+Completed\+Promise}}
 \begin{DoxyCompactList}\small\item\em a promise variable to check if publish request for Register\+Thing was received \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_ad8245e3c483d250e671e5db6daf2172d}\label{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_ad8245e3c483d250e671e5db6daf2172d}} 
-std\+::promise$<$ bool $>$ \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_ad8245e3c483d250e671e5db6daf2172d}{csr\+Accepted\+Completed\+Promise}
+std\+::promise$<$ bool $>$ \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_ad8245e3c483d250e671e5db6daf2172d}{csr\+Accepted\+Completed\+Promise}}
 \begin{DoxyCompactList}\small\item\em a promise variable to check if subscription request to Create\+Certificate\+From\+Csr Accept topic was executed \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_af12cc3b90aeaf3520c94c813fb6fc216}\label{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_af12cc3b90aeaf3520c94c813fb6fc216}} 
-std\+::promise$<$ bool $>$ \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_af12cc3b90aeaf3520c94c813fb6fc216}{csr\+Rejected\+Completed\+Promise}
+std\+::promise$<$ bool $>$ \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_af12cc3b90aeaf3520c94c813fb6fc216}{csr\+Rejected\+Completed\+Promise}}
 \begin{DoxyCompactList}\small\item\em a promise variable to check if subscription to Create\+Certificate\+From\+Csr Reject topic was executed \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_ac18cad5f3af2baa69431ba0a3f8ae753}\label{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_ac18cad5f3af2baa69431ba0a3f8ae753}} 
-std\+::promise$<$ bool $>$ \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_ac18cad5f3af2baa69431ba0a3f8ae753}{csr\+Creation\+Completed\+Promise}
+std\+::promise$<$ bool $>$ \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_ac18cad5f3af2baa69431ba0a3f8ae753}{csr\+Creation\+Completed\+Promise}}
 \begin{DoxyCompactList}\small\item\em a promise variable to check if publish request for Create\+Certificate\+From\+Csr was executed \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a5f7f726a72c70311d695d859824c07d5}\label{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a5f7f726a72c70311d695d859824c07d5}} 
-std\+::promise$<$ bool $>$ \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a5f7f726a72c70311d695d859824c07d5}{register\+Publish\+Completed\+Promise}
+std\+::promise$<$ bool $>$ \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a5f7f726a72c70311d695d859824c07d5}{register\+Publish\+Completed\+Promise}}
 \begin{DoxyCompactList}\small\item\em a promise variable to check if publish request for Register\+Thing was received \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a02c6207e7109e3b3ab9a65cfb819fac4}\label{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a02c6207e7109e3b3ab9a65cfb819fac4}} 
-std\+::promise$<$ bool $>$ \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a02c6207e7109e3b3ab9a65cfb819fac4}{register\+Accepted\+Completed\+Promise}
+std\+::promise$<$ bool $>$ \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a02c6207e7109e3b3ab9a65cfb819fac4}{register\+Accepted\+Completed\+Promise}}
 \begin{DoxyCompactList}\small\item\em a promise variable to check if subscription to Register\+Thing Accept topic was executed \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_ac7e4a4690c0393c21ef3e9d1c83e8d15}\label{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_ac7e4a4690c0393c21ef3e9d1c83e8d15}} 
-std\+::promise$<$ bool $>$ \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_ac7e4a4690c0393c21ef3e9d1c83e8d15}{register\+Rejected\+Completed\+Promise}
+std\+::promise$<$ bool $>$ \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_ac7e4a4690c0393c21ef3e9d1c83e8d15}{register\+Rejected\+Completed\+Promise}}
 \begin{DoxyCompactList}\small\item\em a promise variable to check if subscription to Register\+Thing Reject topic was executed \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a1259c4a7d011bca3a473748dafc737c0}\label{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a1259c4a7d011bca3a473748dafc737c0}} 
-std\+::promise$<$ bool $>$ \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a1259c4a7d011bca3a473748dafc737c0}{register\+Thing\+Completed\+Promise}
+std\+::promise$<$ bool $>$ \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a1259c4a7d011bca3a473748dafc737c0}{register\+Thing\+Completed\+Promise}}
 \begin{DoxyCompactList}\small\item\em a promise variable to check if publish request for Register\+Thing was executed \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_ae0b788ac815eba2ee89dc1ace2189aba}\label{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_ae0b788ac815eba2ee89dc1ace2189aba}} 
-Aws\+::\+Crt\+::\+String \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_ae0b788ac815eba2ee89dc1ace2189aba}{certificate\+Ownership\+Token}
+Aws\+::\+Crt\+::\+String \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_ae0b788ac815eba2ee89dc1ace2189aba}{certificate\+Ownership\+Token}}
 \begin{DoxyCompactList}\small\item\em stores certificate Ownership Token \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a03535dae9cd461c763134f6bef30448d}\label{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a03535dae9cd461c763134f6bef30448d}} 
-Aws\+::\+Crt\+::\+String \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a03535dae9cd461c763134f6bef30448d}{cert\+Path}
+Aws\+::\+Crt\+::\+String \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a03535dae9cd461c763134f6bef30448d}{cert\+Path}}
 \begin{DoxyCompactList}\small\item\em stores certificate file path of newly created certificate \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a1ab0c65a121383574f39b48edbf06b38}\label{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a1ab0c65a121383574f39b48edbf06b38}} 
-Aws\+::\+Crt\+::\+String \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a1ab0c65a121383574f39b48edbf06b38}{key\+Path}
+Aws\+::\+Crt\+::\+String \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a1ab0c65a121383574f39b48edbf06b38}{key\+Path}}
 \begin{DoxyCompactList}\small\item\em stores private key file path of newly created private key \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a567f7f58db121f2b5b0278321da45086}\label{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a567f7f58db121f2b5b0278321da45086}} 
-std\+::string \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a567f7f58db121f2b5b0278321da45086}{key\+Dir} = Config\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+K\+E\+Y\+\_\+\+D\+IR
+std\+::string \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a567f7f58db121f2b5b0278321da45086}{key\+Dir}} = Config\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+K\+E\+Y\+\_\+\+D\+IR
 \begin{DoxyCompactList}\small\item\em the location where keys generated by Fleet Provisioning will be stored \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a02d85e03d940ee61003b91af0a6cddf7}\label{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a02d85e03d940ee61003b91af0a6cddf7}} 
-Aws\+::\+Crt\+::\+String \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a02d85e03d940ee61003b91af0a6cddf7}{thing\+Name}
+Aws\+::\+Crt\+::\+String \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a02d85e03d940ee61003b91af0a6cddf7}{thing\+Name}}
 \begin{DoxyCompactList}\small\item\em stores thing name of newly provisioned device \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a815d738dd64327e5d671119592ef7ada}\label{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a815d738dd64327e5d671119592ef7ada}} 
-Aws\+::\+Crt\+::\+String \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a815d738dd64327e5d671119592ef7ada}{template\+Name}
+Aws\+::\+Crt\+::\+String \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a815d738dd64327e5d671119592ef7ada}{template\+Name}}
 \begin{DoxyCompactList}\small\item\em stores Fleet Provisioning template name \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a02873b53e68e1a63cd1087a07d795dcf}\label{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a02873b53e68e1a63cd1087a07d795dcf}} 
-std\+::string \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a02873b53e68e1a63cd1087a07d795dcf}{csr\+File}
+std\+::string \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a02873b53e68e1a63cd1087a07d795dcf}{csr\+File}}
 \begin{DoxyCompactList}\small\item\em stores C\+SR file content \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Static Private Attributes}
+\doxysubsection*{Static Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_adfa918ea7ce640a53fb08cd13740cfb3}\label{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_adfa918ea7ce640a53fb08cd13740cfb3}} 
-static constexpr char \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_adfa918ea7ce640a53fb08cd13740cfb3}{T\+AG} \mbox{[}$\,$\mbox{]} = \char`\"{}Fleet\+Provisioning.\+cpp\char`\"{}
+static constexpr char \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_adfa918ea7ce640a53fb08cd13740cfb3}{T\+AG}} \mbox{[}$\,$\mbox{]} = \char`\"{}Fleet\+Provisioning.\+cpp\char`\"{}
 \begin{DoxyCompactList}\small\item\em Used by the logger to specify that log messages are coming from the Fleet Provisioning feature. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_aced71437e7c96da26a13e53288ca1247}\label{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_aced71437e7c96da26a13e53288ca1247}} 
-static constexpr int \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_aced71437e7c96da26a13e53288ca1247}{D\+E\+F\+A\+U\+L\+T\+\_\+\+W\+A\+I\+T\+\_\+\+T\+I\+M\+E\+\_\+\+S\+E\+C\+O\+N\+DS} = 10
+static constexpr int \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_aced71437e7c96da26a13e53288ca1247}{D\+E\+F\+A\+U\+L\+T\+\_\+\+W\+A\+I\+T\+\_\+\+T\+I\+M\+E\+\_\+\+S\+E\+C\+O\+N\+DS}} = 10
 \begin{DoxyCompactList}\small\item\em The default value in seconds for which Device client will wait for promise variables to be initialized. These promise variables will be initialized in respective callback methods. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
+\doxysubsection{Detailed Description}
 Provides IoT Fleet Provisioning related functionality within the Device Client. 
 
-\subsection{Member Function Documentation}
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a9be44fae9cf49f534763243561c66586}\label{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a9be44fae9cf49f534763243561c66586}} 
-\index{Aws\+::\+Iot\+::\+Device\+Client\+::\+Fleet\+Provisioning@{Aws\+::\+Iot\+::\+Device\+Client\+::\+Fleet\+Provisioning}!Create\+Certificate\+And\+Key@{Create\+Certificate\+And\+Key}}
-\index{Create\+Certificate\+And\+Key@{Create\+Certificate\+And\+Key}!Aws\+::\+Iot\+::\+Device\+Client\+::\+Fleet\+Provisioning@{Aws\+::\+Iot\+::\+Device\+Client\+::\+Fleet\+Provisioning}}
-\subsubsection{\texorpdfstring{Create\+Certificate\+And\+Key()}{CreateCertificateAndKey()}}
+\index{Aws::Iot::DeviceClient::FleetProvisioning@{Aws::Iot::DeviceClient::FleetProvisioning}!CreateCertificateAndKey@{CreateCertificateAndKey}}
+\index{CreateCertificateAndKey@{CreateCertificateAndKey}!Aws::Iot::DeviceClient::FleetProvisioning@{Aws::Iot::DeviceClient::FleetProvisioning}}
+\doxysubsubsection{\texorpdfstring{CreateCertificateAndKey()}{CreateCertificateAndKey()}}
 {\footnotesize\ttfamily bool Fleet\+Provisioning\+::\+Create\+Certificate\+And\+Key (\begin{DoxyParamCaption}\item[{Iotidentity\+::\+Iot\+Identity\+Client}]{identity\+Client }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -121,9 +121,9 @@ creates a new certificate and private key using the A\+WS certificate authority
 returns true if resources are created successfully 
 \end{DoxyReturn}
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a2044a0b21798463dff066fabbb9ad869}\label{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a2044a0b21798463dff066fabbb9ad869}} 
-\index{Aws\+::\+Iot\+::\+Device\+Client\+::\+Fleet\+Provisioning@{Aws\+::\+Iot\+::\+Device\+Client\+::\+Fleet\+Provisioning}!Create\+Certificate\+Using\+C\+SR@{Create\+Certificate\+Using\+C\+SR}}
-\index{Create\+Certificate\+Using\+C\+SR@{Create\+Certificate\+Using\+C\+SR}!Aws\+::\+Iot\+::\+Device\+Client\+::\+Fleet\+Provisioning@{Aws\+::\+Iot\+::\+Device\+Client\+::\+Fleet\+Provisioning}}
-\subsubsection{\texorpdfstring{Create\+Certificate\+Using\+C\+S\+R()}{CreateCertificateUsingCSR()}}
+\index{Aws::Iot::DeviceClient::FleetProvisioning@{Aws::Iot::DeviceClient::FleetProvisioning}!CreateCertificateUsingCSR@{CreateCertificateUsingCSR}}
+\index{CreateCertificateUsingCSR@{CreateCertificateUsingCSR}!Aws::Iot::DeviceClient::FleetProvisioning@{Aws::Iot::DeviceClient::FleetProvisioning}}
+\doxysubsubsection{\texorpdfstring{CreateCertificateUsingCSR()}{CreateCertificateUsingCSR()}}
 {\footnotesize\ttfamily bool Fleet\+Provisioning\+::\+Create\+Certificate\+Using\+C\+SR (\begin{DoxyParamCaption}\item[{Iotidentity\+::\+Iot\+Identity\+Client}]{identity\+Client }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -139,9 +139,9 @@ generate a certificate from a certificate signing request (C\+SR) that keeps use
 returns true if resources are created successfully 
 \end{DoxyReturn}
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a6f4e107e4d2858f51603eec2f390aa96}\label{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a6f4e107e4d2858f51603eec2f390aa96}} 
-\index{Aws\+::\+Iot\+::\+Device\+Client\+::\+Fleet\+Provisioning@{Aws\+::\+Iot\+::\+Device\+Client\+::\+Fleet\+Provisioning}!Export\+Runtime\+Config@{Export\+Runtime\+Config}}
-\index{Export\+Runtime\+Config@{Export\+Runtime\+Config}!Aws\+::\+Iot\+::\+Device\+Client\+::\+Fleet\+Provisioning@{Aws\+::\+Iot\+::\+Device\+Client\+::\+Fleet\+Provisioning}}
-\subsubsection{\texorpdfstring{Export\+Runtime\+Config()}{ExportRuntimeConfig()}}
+\index{Aws::Iot::DeviceClient::FleetProvisioning@{Aws::Iot::DeviceClient::FleetProvisioning}!ExportRuntimeConfig@{ExportRuntimeConfig}}
+\index{ExportRuntimeConfig@{ExportRuntimeConfig}!Aws::Iot::DeviceClient::FleetProvisioning@{Aws::Iot::DeviceClient::FleetProvisioning}}
+\doxysubsubsection{\texorpdfstring{ExportRuntimeConfig()}{ExportRuntimeConfig()}}
 {\footnotesize\ttfamily bool Fleet\+Provisioning\+::\+Export\+Runtime\+Config (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file,  }\item[{const std\+::string \&}]{runtime\+Cert\+Path,  }\item[{const std\+::string \&}]{runtime\+Key\+Path,  }\item[{const std\+::string \&}]{runtime\+Thing\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -163,9 +163,9 @@ exports config of newly created resources to runtime config file
 returns true if resources are registered and created successfully 
 \end{DoxyReturn}
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_ae209de046ed351b4c8d3ef7e1d9f00bc}\label{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_ae209de046ed351b4c8d3ef7e1d9f00bc}} 
-\index{Aws\+::\+Iot\+::\+Device\+Client\+::\+Fleet\+Provisioning@{Aws\+::\+Iot\+::\+Device\+Client\+::\+Fleet\+Provisioning}!Get\+Csr\+File\+Content@{Get\+Csr\+File\+Content}}
-\index{Get\+Csr\+File\+Content@{Get\+Csr\+File\+Content}!Aws\+::\+Iot\+::\+Device\+Client\+::\+Fleet\+Provisioning@{Aws\+::\+Iot\+::\+Device\+Client\+::\+Fleet\+Provisioning}}
-\subsubsection{\texorpdfstring{Get\+Csr\+File\+Content()}{GetCsrFileContent()}}
+\index{Aws::Iot::DeviceClient::FleetProvisioning@{Aws::Iot::DeviceClient::FleetProvisioning}!GetCsrFileContent@{GetCsrFileContent}}
+\index{GetCsrFileContent@{GetCsrFileContent}!Aws::Iot::DeviceClient::FleetProvisioning@{Aws::Iot::DeviceClient::FleetProvisioning}}
+\doxysubsubsection{\texorpdfstring{GetCsrFileContent()}{GetCsrFileContent()}}
 {\footnotesize\ttfamily bool Fleet\+Provisioning\+::\+Get\+Csr\+File\+Content (\begin{DoxyParamCaption}\item[{const std\+::string}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -181,10 +181,10 @@ gets C\+SR file content
 returns false if client is not able to open the file or if file is empty 
 \end{DoxyReturn}
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a502dc44bd8de73a21d7d42945e9b7f7b}\label{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a502dc44bd8de73a21d7d42945e9b7f7b}} 
-\index{Aws\+::\+Iot\+::\+Device\+Client\+::\+Fleet\+Provisioning@{Aws\+::\+Iot\+::\+Device\+Client\+::\+Fleet\+Provisioning}!Provision\+Device@{Provision\+Device}}
-\index{Provision\+Device@{Provision\+Device}!Aws\+::\+Iot\+::\+Device\+Client\+::\+Fleet\+Provisioning@{Aws\+::\+Iot\+::\+Device\+Client\+::\+Fleet\+Provisioning}}
-\subsubsection{\texorpdfstring{Provision\+Device()}{ProvisionDevice()}}
-{\footnotesize\ttfamily bool Fleet\+Provisioning\+::\+Provision\+Device (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_shared_crt_resource_manager}{Shared\+Crt\+Resource\+Manager} $>$}]{fp\+Connection,  }\item[{\hyperlink{struct_aws_1_1_iot_1_1_device_client_1_1_plain_config}{Plain\+Config} \&}]{config }\end{DoxyParamCaption})}
+\index{Aws::Iot::DeviceClient::FleetProvisioning@{Aws::Iot::DeviceClient::FleetProvisioning}!ProvisionDevice@{ProvisionDevice}}
+\index{ProvisionDevice@{ProvisionDevice}!Aws::Iot::DeviceClient::FleetProvisioning@{Aws::Iot::DeviceClient::FleetProvisioning}}
+\doxysubsubsection{\texorpdfstring{ProvisionDevice()}{ProvisionDevice()}}
+{\footnotesize\ttfamily bool Fleet\+Provisioning\+::\+Provision\+Device (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_shared_crt_resource_manager}{Shared\+Crt\+Resource\+Manager}} $>$}]{fp\+Connection,  }\item[{\mbox{\hyperlink{struct_aws_1_1_iot_1_1_device_client_1_1_plain_config}{Plain\+Config}} \&}]{config }\end{DoxyParamCaption})}
 
 
 
@@ -201,9 +201,9 @@ Provisions device by creating and storing required resources.
 returns true if device is provisioned successfully 
 \end{DoxyReturn}
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a2221768ad4f91ac5c593485de33c5c80}\label{class_aws_1_1_iot_1_1_device_client_1_1_fleet_provisioning_a2221768ad4f91ac5c593485de33c5c80}} 
-\index{Aws\+::\+Iot\+::\+Device\+Client\+::\+Fleet\+Provisioning@{Aws\+::\+Iot\+::\+Device\+Client\+::\+Fleet\+Provisioning}!Register\+Thing@{Register\+Thing}}
-\index{Register\+Thing@{Register\+Thing}!Aws\+::\+Iot\+::\+Device\+Client\+::\+Fleet\+Provisioning@{Aws\+::\+Iot\+::\+Device\+Client\+::\+Fleet\+Provisioning}}
-\subsubsection{\texorpdfstring{Register\+Thing()}{RegisterThing()}}
+\index{Aws::Iot::DeviceClient::FleetProvisioning@{Aws::Iot::DeviceClient::FleetProvisioning}!RegisterThing@{RegisterThing}}
+\index{RegisterThing@{RegisterThing}!Aws::Iot::DeviceClient::FleetProvisioning@{Aws::Iot::DeviceClient::FleetProvisioning}}
+\doxysubsubsection{\texorpdfstring{RegisterThing()}{RegisterThing()}}
 {\footnotesize\ttfamily bool Fleet\+Provisioning\+::\+Register\+Thing (\begin{DoxyParamCaption}\item[{Iotidentity\+::\+Iot\+Identity\+Client}]{identity\+Client }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -222,5 +222,5 @@ returns true if resources are registered and created successfully
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/home/\+A\+N\+T.\+A\+M\+A\+Z\+O\+N.\+C\+O\+M/lwwilkov/\+Workspace/aws-\/iot-\/device-\/client/source/fleetprovisioning/Fleet\+Provisioning.\+h\item 
-/home/\+A\+N\+T.\+A\+M\+A\+Z\+O\+N.\+C\+O\+M/lwwilkov/\+Workspace/aws-\/iot-\/device-\/client/source/fleetprovisioning/Fleet\+Provisioning.\+cpp\end{DoxyCompactItemize}
+/home/runner/work/aws-\/iot-\/device-\/client/aws-\/iot-\/device-\/client/source/fleetprovisioning/Fleet\+Provisioning.\+h\item 
+/home/runner/work/aws-\/iot-\/device-\/client/aws-\/iot-\/device-\/client/source/fleetprovisioning/Fleet\+Provisioning.\+cpp\end{DoxyCompactItemize}

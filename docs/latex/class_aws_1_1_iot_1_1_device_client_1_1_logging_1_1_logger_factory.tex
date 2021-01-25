@@ -1,5 +1,5 @@
-\hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_logger_factory}{}\section{Aws\+:\+:Iot\+:\+:Device\+Client\+:\+:Logging\+:\+:Logger\+Factory Class Reference}
-\label{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_logger_factory}\index{Aws\+::\+Iot\+::\+Device\+Client\+::\+Logging\+::\+Logger\+Factory@{Aws\+::\+Iot\+::\+Device\+Client\+::\+Logging\+::\+Logger\+Factory}}
+\hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_logger_factory}{}\doxysection{Aws\+::Iot\+::Device\+Client\+::Logging\+::Logger\+Factory Class Reference}
+\label{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_logger_factory}\index{Aws::Iot::DeviceClient::Logging::LoggerFactory@{Aws::Iot::DeviceClient::Logging::LoggerFactory}}
 
 
 Factory-\/style class used for instantiation of the logger implementation and access to logging features.  
@@ -9,48 +9,48 @@ Factory-\/style class used for instantiation of the logger implementation and ac
 
 {\ttfamily \#include $<$Logger\+Factory.\+h$>$}
 
-\subsection*{Static Public Member Functions}
+\doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static std\+::shared\+\_\+ptr$<$ \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_logger}{Logger} $>$ \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_logger_factory_aa3aeb2ab09afe3977d3a4b273a1406ae}{get\+Logger\+Instance} ()
+static std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_logger}{Logger}} $>$ \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_logger_factory_aa3aeb2ab09afe3977d3a4b273a1406ae}{get\+Logger\+Instance}} ()
 \begin{DoxyCompactList}\small\item\em Returns the active logger instance. \end{DoxyCompactList}\item 
-static bool \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_logger_factory_aa653d2356cf9852d3dd07a3f1017393f}{reconfigure} (const \hyperlink{struct_aws_1_1_iot_1_1_device_client_1_1_plain_config}{Plain\+Config} \&config)
+static bool \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_logger_factory_aa653d2356cf9852d3dd07a3f1017393f}{reconfigure}} (const \mbox{\hyperlink{struct_aws_1_1_iot_1_1_device_client_1_1_plain_config}{Plain\+Config}} \&config)
 \begin{DoxyCompactList}\small\item\em Reconfigure the logger to use a new set of settings. This may include changing the log level or switching between logger implementations. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Static Private Attributes}
+\doxysubsection*{Static Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_logger_factory_ab1a8c22c64747cdc96dd69d889557f49}\label{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_logger_factory_ab1a8c22c64747cdc96dd69d889557f49}} 
 static constexpr char {\bfseries T\+AG} \mbox{[}$\,$\mbox{]} = \char`\"{}Logger\+Factory.\+cpp\char`\"{}
 \item 
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_logger_factory_a2e578976f1980624ab0c79c42bb3af5f}\label{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_logger_factory_a2e578976f1980624ab0c79c42bb3af5f}} 
-static std\+::shared\+\_\+ptr$<$ \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_logger}{Logger} $>$ \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_logger_factory_a2e578976f1980624ab0c79c42bb3af5f}{logger} = shared\+\_\+ptr$<$\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_logger}{Logger}$>$(new \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_std_out_logger}{Std\+Out\+Logger}())
+static std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_logger}{Logger}} $>$ \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_logger_factory_a2e578976f1980624ab0c79c42bb3af5f}{logger}} = shared\+\_\+ptr$<$\mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_logger}{Logger}}$>$(new \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_std_out_logger}{Std\+Out\+Logger}}())
 \begin{DoxyCompactList}\small\item\em The logger implementation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
+\doxysubsection{Detailed Description}
 Factory-\/style class used for instantiation of the logger implementation and access to logging features. 
 
 This class is intended to provide a layer of abstraction between the Device Client and the actual logger implementation. 
 
-\subsection{Member Function Documentation}
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_logger_factory_aa3aeb2ab09afe3977d3a4b273a1406ae}\label{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_logger_factory_aa3aeb2ab09afe3977d3a4b273a1406ae}} 
-\index{Aws\+::\+Iot\+::\+Device\+Client\+::\+Logging\+::\+Logger\+Factory@{Aws\+::\+Iot\+::\+Device\+Client\+::\+Logging\+::\+Logger\+Factory}!get\+Logger\+Instance@{get\+Logger\+Instance}}
-\index{get\+Logger\+Instance@{get\+Logger\+Instance}!Aws\+::\+Iot\+::\+Device\+Client\+::\+Logging\+::\+Logger\+Factory@{Aws\+::\+Iot\+::\+Device\+Client\+::\+Logging\+::\+Logger\+Factory}}
-\subsubsection{\texorpdfstring{get\+Logger\+Instance()}{getLoggerInstance()}}
-{\footnotesize\ttfamily shared\+\_\+ptr$<$ \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_logger}{Logger} $>$ Logger\+Factory\+::get\+Logger\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+\index{Aws::Iot::DeviceClient::Logging::LoggerFactory@{Aws::Iot::DeviceClient::Logging::LoggerFactory}!getLoggerInstance@{getLoggerInstance}}
+\index{getLoggerInstance@{getLoggerInstance}!Aws::Iot::DeviceClient::Logging::LoggerFactory@{Aws::Iot::DeviceClient::Logging::LoggerFactory}}
+\doxysubsubsection{\texorpdfstring{getLoggerInstance()}{getLoggerInstance()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_logger}{Logger}} $>$ Logger\+Factory\+::get\+Logger\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
 Returns the active logger instance. 
 
 \begin{DoxyReturn}{Returns}
-an instance of \hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_logger}{Logger} 
+an instance of \mbox{\hyperlink{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_logger}{Logger}} 
 \end{DoxyReturn}
 \mbox{\Hypertarget{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_logger_factory_aa653d2356cf9852d3dd07a3f1017393f}\label{class_aws_1_1_iot_1_1_device_client_1_1_logging_1_1_logger_factory_aa653d2356cf9852d3dd07a3f1017393f}} 
-\index{Aws\+::\+Iot\+::\+Device\+Client\+::\+Logging\+::\+Logger\+Factory@{Aws\+::\+Iot\+::\+Device\+Client\+::\+Logging\+::\+Logger\+Factory}!reconfigure@{reconfigure}}
-\index{reconfigure@{reconfigure}!Aws\+::\+Iot\+::\+Device\+Client\+::\+Logging\+::\+Logger\+Factory@{Aws\+::\+Iot\+::\+Device\+Client\+::\+Logging\+::\+Logger\+Factory}}
-\subsubsection{\texorpdfstring{reconfigure()}{reconfigure()}}
-{\footnotesize\ttfamily bool Logger\+Factory\+::reconfigure (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_aws_1_1_iot_1_1_device_client_1_1_plain_config}{Plain\+Config} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+\index{Aws::Iot::DeviceClient::Logging::LoggerFactory@{Aws::Iot::DeviceClient::Logging::LoggerFactory}!reconfigure@{reconfigure}}
+\index{reconfigure@{reconfigure}!Aws::Iot::DeviceClient::Logging::LoggerFactory@{Aws::Iot::DeviceClient::Logging::LoggerFactory}}
+\doxysubsubsection{\texorpdfstring{reconfigure()}{reconfigure()}}
+{\footnotesize\ttfamily bool Logger\+Factory\+::reconfigure (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_aws_1_1_iot_1_1_device_client_1_1_plain_config}{Plain\+Config}} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -68,5 +68,5 @@ Reconfigure the logger to use a new set of settings. This may include changing t
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/home/\+A\+N\+T.\+A\+M\+A\+Z\+O\+N.\+C\+O\+M/lwwilkov/\+Workspace/aws-\/iot-\/device-\/client/source/logging/Logger\+Factory.\+h\item 
-/home/\+A\+N\+T.\+A\+M\+A\+Z\+O\+N.\+C\+O\+M/lwwilkov/\+Workspace/aws-\/iot-\/device-\/client/source/logging/Logger\+Factory.\+cpp\end{DoxyCompactItemize}
+/home/runner/work/aws-\/iot-\/device-\/client/aws-\/iot-\/device-\/client/source/logging/Logger\+Factory.\+h\item 
+/home/runner/work/aws-\/iot-\/device-\/client/aws-\/iot-\/device-\/client/source/logging/Logger\+Factory.\+cpp\end{DoxyCompactItemize}
