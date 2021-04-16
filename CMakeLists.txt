@@ -92,7 +92,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -pthread")
 set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -s")
 
 if (CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -ldl")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
 endif()
 
 #########################################
@@ -104,9 +104,9 @@ include(CMakeLists.txt.versioning)
 configure_file("source/Version.h.in" "${PROJECT_BINARY_DIR}/Version.h")
 
 #########################################
-# OpenSSL dependency                    #
+# AWSLC dependency                    #
 #########################################
-find_package(OpenSSL REQUIRED)
+find_package(AWSLC)                                                                                                                                                                                    
 
 #########################################
 # AWS IoT v2 SDK C++ dependency         #
@@ -129,6 +129,8 @@ else ()
     include_directories(/include)
     link_directories(/lib)
 endif ()
+
+link_directories(/usr/lib)
 
 ###############################################
 ## Build the AWS IoT Device Client Executable #
@@ -172,8 +174,7 @@ if (NOT EXCLUDE_FP)
 endif ()
 
 target_link_libraries(${DC_PROJECT_NAME} ${DEP_DC_LIBS})
-target_link_libraries(${DC_PROJECT_NAME} OpenSSL::SSL)
-target_link_libraries(${DC_PROJECT_NAME} OpenSSL::Crypto)
+target_link_libraries(${DC_PROJECT_NAME} LibCrypto::Crypto)
 
 # If you're linking statically against the SDK but dynamically against libraries such as OpenSSL,
 # you may need to link the device client against the dynamic loader provided by glib
@@ -181,24 +182,5 @@ if (LINK_DL)
     target_link_libraries(${DC_PROJECT_NAME} dl)
 endif ()
 
-if (BUILD_TEST_DEPS)
-    # Download and unpack googletest at configure time
-    configure_file(CMakeLists.txt.gtest
-            googletest-download/CMakeLists.txt)
-    execute_process(COMMAND ${CMAKE_COMMAND} -G "${CMAKE_GENERATOR}" .
-            WORKING_DIRECTORY ${CMAKE_BINARY_DIR}/googletest-download)
-    execute_process(COMMAND ${CMAKE_COMMAND} --build .
-            WORKING_DIRECTORY ${CMAKE_BINARY_DIR}/googletest-download)
-
-    # Prevent GoogleTest from overriding our compiler/linker options
-    # when building with Visual Studio
-    set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
-
-    # Add googletest directly to our build. This adds
-    # the following targets: gtest, gtest_main, gmock
-    # and gmock_main
-    add_subdirectory(${CMAKE_BINARY_DIR}/googletest-src
-            ${CMAKE_BINARY_DIR}/googletest-build)
-endif ()
 
 add_subdirectory(test)

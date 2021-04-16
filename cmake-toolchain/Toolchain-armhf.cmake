@@ -25,7 +25,7 @@ SET(S2N_NO_PQ ON)
 set(CMAKE_FIND_DEBUG_MODE TRUE)
 
 #Fix some wonkiness in the S2N build
-SET(LibCrypto_SHARED_LIBRARY /usr/lib/arm-linux-gnueabihf/lib/libcrypto.so)
-SET(LibCrypto_STATIC_LIBRARY /usr/lib/arm-linux-gnueabihf/lib/libcrypto.a)
+#SET(LibCrypto_SHARED_LIBRARY /usr/lib/arm-linux-gnueabihf/lib/libcrypto.so)
+#SET(LibCrypto_STATIC_LIBRARY /usr/lib/arm-linux-gnueabihf/lib/libcrypto.a)
 
 include_directories(/usr/include)

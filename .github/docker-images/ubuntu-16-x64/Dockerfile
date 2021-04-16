@@ -14,18 +14,6 @@ RUN apt-get update -qq \
     && apt-get clean
 
 ###############################################################################
-# Install OpenSSL 1.1.1
-###############################################################################
-WORKDIR /tmp
-RUN wget https://www.openssl.org/source/openssl-1.1.1.tar.gz \
-    && tar -zxvf openssl-1.1.1.tar.gz \
-    && cd openssl-1.1.1 \
-    && ./config \
-    && make \
-    && make install \
-    && ldconfig
-
-###############################################################################
 # Install pre-built CMake
 ###############################################################################
 WORKDIR /tmp
@@ -58,7 +46,7 @@ RUN mkdir sdk-cpp-workspace \
     && mkdir aws-iot-device-sdk-cpp-v2-build \
     && git clone --recursive https://github.com/aws/aws-iot-device-sdk-cpp-v2.git \
     && cd aws-iot-device-sdk-cpp-v2 \
-    && git checkout 4b16a0236be89d77375c43c9ffb8be5b929e6227 \
+    && git checkout f3d0923462f3e9b967bd1650a6c677139ca940af \
     && cd ../aws-iot-device-sdk-cpp-v2-build \
     && cmake -DCMAKE_INSTALL_PREFIX="/usr" -DBUILD_DEPS=ON ../aws-iot-device-sdk-cpp-v2 \
     && cmake --build . --target install
