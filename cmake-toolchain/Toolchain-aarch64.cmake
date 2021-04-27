@@ -22,10 +22,8 @@ SET(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE BOTH)
 SET(CMAKE_CROSSCOMPILING 1)
 
 SET(S2N_NO_PQ ON)
-set(CMAKE_FIND_DEBUG_MODE TRUE)
+SET(CMAKE_FIND_DEBUG_MODE TRUE)
 
-#Fix some wonkiness in the S2N build
-#SET(LibCrypto_SHARED_LIBRARY /usr/lib/aarch64-linux-gnu/lib/libcrypto.so)
-#SET(LibCrypto_STATIC_LIBRARY /usr/lib/aarch64-linux-gnu/lib/libcrypto.a)
+SET(CMAKE_SYSTEM_PROCESSOR "aarch64")
 
 include_directories(/usr/include)
